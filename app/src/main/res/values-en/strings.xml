@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Welcome to Wa a Remote!</string>
+    <string name="app_name">Wa a Remote</string>
+    <string name="select_file">Select one file</string>
+    <string name="select_file_last">At least select one file</string>
+    
+    <string name="not_file">No files in the directory!</string>
+    <string name="set_ip">Setting connection</string>
+    <string name="set_ok">setting OK</string>
+    <string name="input_ip">Please input IP</string>
+    <string name="ip_error">Wrong IP format</string>
+    <string name="port_error">Incorrect Port range</string>
+    <string name="first_set">Setting connection first!</string>
+
+</resources>

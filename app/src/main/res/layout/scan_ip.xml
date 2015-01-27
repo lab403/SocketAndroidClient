@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black"
+    android:orientation="vertical" >
+
+    <!-- <Button 自動連線按鈕 -->
+    <!-- android:id="@+id/ScanIP" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_marginTop="50dp" -->
+    <!-- android:text="自動連接" -->
+    <!-- android:textSize="24dp" -->
+    <!-- android:onClick="AutoScanIP"/> -->
+
+    
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/black2" />
+
+    <EditText
+        android:id="@+id/ServerIP"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp"
+        android:inputType="number|numberDecimal|textEmailSubject" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ServerIP"
+        android:layout_centerHorizontal="true"
+        android:text="ServerIP"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/ChkIP"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignRight="@+id/ServerIP"
+        android:layout_alignTop="@+id/ServerIP"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/v1"
+        android:onClick="ChkIP"
+        android:text="連線"
+        android:textSize="24dp" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black" >
+
+    <ImageButton
+        android:id="@+id/music_btn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/music"
+        android:onClick="gotoTab" />
+
+    <ImageButton
+        android:id="@+id/video_btn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/music_btn"
+        android:layout_toRightOf="@+id/music_btn"
+        android:background="@drawable/video"
+        android:onClick="gotoTab" />
+
+    <ImageButton
+        android:id="@+id/powerpoint_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/video_btn"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="22dp"
+        android:background="@drawable/powerpoint"
+        android:onClick="gotoTab" />
+
+    <ImageButton
+        android:id="@+id/power_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/video_btn"
+        android:layout_below="@+id/powerpoint_btn"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/power"
+        android:onClick="gotoTab" />
+
+    <ImageButton
+        android:id="@+id/help_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/power_btn"
+        android:layout_toLeftOf="@+id/power_btn"
+        android:background="@drawable/help"
+        android:onClick="gotoTab" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/black2" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/help_btn"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/help_btn"
+        android:background="@drawable/set"
+        android:onClick="SetIP" />
+
+</RelativeLayout>

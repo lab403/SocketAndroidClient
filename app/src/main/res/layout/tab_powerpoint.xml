@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/black"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/powerpoint_power_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/power_off_icon" />
+
+    <ImageButton
+        android:id="@+id/powerpoint_paga_up"
+        android:layout_width="97dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/powerpoint_power_off"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/powerpoint_paga_up"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:id="@+id/powerpoint_run"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_below="@+id/powerpoint_paga_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/powerpoint_run"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:id="@+id/powerpoint_paga_down"
+        android:layout_width="97dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/powerpoint_run"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/powerpoint_paga_down"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:id="@+id/powerpoint_audio_cut"
+        android:layout_width="54dp"
+        android:layout_height="97dp"
+        android:layout_alignTop="@+id/powerpoint_run"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/powerpoint_run"
+        android:background="@drawable/powerpoint_audio_cut"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:id="@+id/powerpoint_audio_add"
+        android:layout_width="54dp"
+        android:layout_height="97dp"
+        android:layout_alignBottom="@+id/powerpoint_audio_cut"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/powerpoint_run"
+        android:background="@drawable/powerpoint_audio_add"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/powerpoint_time_up"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/imageButton7"
+        android:layout_below="@+id/imageButton7"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/powerpoint_time_cut"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButton7"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageButton7"
+        android:inputType="time"
+        android:text="10:00"
+        android:textColor="#ffffff"
+        android:textSize="60dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/imageButton7"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/editText1"
+        android:src="@drawable/led_r" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/imageButton8"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/led_y" />
+
+    <ImageButton
+        android:id="@+id/powerpoint_file"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:background="@drawable/icon3"
+        android:onClick="onClick" />
+
+</RelativeLayout>

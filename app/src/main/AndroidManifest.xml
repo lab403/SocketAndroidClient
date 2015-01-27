@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.act.waa"
+    android:versionCode="1"
+    android:versionName="1.01" >
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.INTERNET"/> 
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/> 
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> 
+	
+	  
+	<application android:icon="@drawable/arc" android:label="@string/app_name">
+		<activity android:name=".CheckLicense"
+			android:launchMode="standard"
+			android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+        
+		<activity android:name=".Scan_IP"
+			android:launchMode="singleTask"
+			android:label="@string/app_name"/>   
+        
+        <activity android:name="Select_tab"></activity>
+        <activity android:name="WaaRemoteActivity"></activity>
+        <activity android:name="Tab_music"></activity>	
+        <activity android:name="Tab_video"></activity>	
+        <activity android:name="Tab_powerpoint"></activity>	
+        <activity android:name="Tab_power"></activity>	
+        <activity android:name="Tab_help"></activity>	
+        <activity android:name="LV_Music"></activity>
+        <activity android:name="LV_PowerPoint"></activity>
+        <activity android:name="com.act.waa.LV_Video"></activity>
+    </application>
+
+</manifest>

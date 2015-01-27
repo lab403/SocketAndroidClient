@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bark" >
+
+    <ImageButton
+        android:id="@+id/music_power_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/power_off_icon" />
+
+    <ImageButton
+        android:id="@+id/music_itme_up"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/music_power_off"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="55dp"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/up_item" />
+
+    <ImageButton
+        android:id="@+id/music_item_play"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/music_itme_up"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/play_item" />
+
+    <ImageButton
+        android:id="@+id/music_item_down"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/music_item_play"
+        android:layout_marginRight="45dp"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/down_item" />
+
+    <ImageButton
+        android:id="@+id/music_itme_beforePlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/music_itme_up"
+        android:layout_below="@+id/music_itme_up"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/before_play" />
+
+    <ImageButton
+        android:id="@+id/music_item_stopPlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/music_itme_beforePlay"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/stop_play" />
+
+    <ImageButton
+        android:id="@+id/music_item_afterPlay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/music_item_stopPlay"
+        android:layout_marginRight="45dp"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/after_play" />
+
+    <ImageButton
+        android:id="@+id/music_audio_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/music_itme_beforePlay"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="52dp"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/audio_add" />
+
+    <ImageView
+        android:id="@+id/music_audio_pic"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/music_audio_add"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/music_audio_add"
+        android:src="@drawable/music_audio_icon" />
+
+    <ImageButton
+        android:id="@+id/music_audio_cut"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignTop="@+id/music_audio_pic"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/music_audio_pic"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/audio_cut" />
+
+    <ImageButton
+        android:id="@+id/music_audio_off"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/music_audio_pic"
+        android:layout_alignLeft="@+id/music_item_afterPlay"
+        android:layout_marginLeft="25dp"
+        android:background="#00000000"
+        android:onClick="onClick"
+        android:src="@drawable/music_audio_off" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/t1"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/music_random"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/icon1"
+            android:onClick="onClick" />
+"
+
+        <ImageButton
+            android:id="@+id/music_repeat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:onClick="onClick"
+            android:background="@drawable/icon2" />
+
+        <ImageButton
+            android:id="@+id/music_list"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="onClick"
+            android:background="@drawable/icon3" />
+    </LinearLayout>
+
+</RelativeLayout>
